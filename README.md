@@ -93,7 +93,7 @@ LocalStorage API
 
 📦 Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/sriramulagowtham115/Vasundharaa-Geo-Technologies-.git
+git clone https://github.com/bhavanacreate/Vasundharaa-Geo-Technologies-.git
 cd Vasundharaa-Geo-Technologies-
 
 2️⃣ Install Dependencies
@@ -110,8 +110,5 @@ http://localhost:5173
 
 🧑‍💻 Author
 
-Sriramula Gowtham
-Aspiring React Developer
-
-LinkedIn: https://www.linkedin.com/in/gowtham-sriramula-792307320
+Bhavana
 
