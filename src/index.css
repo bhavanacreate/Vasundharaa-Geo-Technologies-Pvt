@@ -1,0 +1,194 @@
+/* ================================
+   iOS SYSTEM RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont,
+               "SF Pro Text", "SF Pro Display",
+               Helvetica, Arial, sans-serif;
+}
+
+/* ================================
+   PAGE BACKGROUND (CENTERED)
+================================ */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #f2f2f7,
+    #e8f0ff,
+    #fdf2f8
+  );
+
+  color: #1c1c1e;
+}
+
+/* ================================
+   APP CONTAINER
+================================ */
+.app {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* ================================
+   iOS SEGMENTED CONTROL
+================================ */
+.segment {
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    #e0e7ff,
+    #fce7f3,
+    #ecfeff
+  );
+  border-radius: 18px;
+  padding: 6px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.segment button {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 12px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1c1c1e;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.segment-active {
+  background: linear-gradient(
+    135deg,
+    #007aff,
+    #5ac8fa
+  );
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,122,255,0.35);
+}
+
+/* ================================
+   CARD (MAIN CONTENT)
+================================ */
+.card {
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #f9f9ff
+  );
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.08),
+    0 2px 6px rgba(0,0,0,0.05);
+  animation: fadeUp 0.4s ease;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* ================================
+   INPUTS
+================================ */
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #d1d1d6;
+  font-size: 15px;
+  margin-bottom: 12px;
+  background: #ffffff;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007aff;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: linear-gradient(
+    135deg,
+    #007aff,
+    #5ac8fa
+  );
+  color: white;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,122,255,0.35);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ================================
+   SECONDARY BUTTONS
+================================ */
+.btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-secondary {
+  background: linear-gradient(
+    135deg,
+    #e5e5ea,
+    #f2f2f7
+  );
+  color: #000;
+}
+
+/* ================================
+   ERROR TEXT
+================================ */
+.error {
+  color: #ff3b30;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
